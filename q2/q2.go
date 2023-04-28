@@ -9,10 +9,28 @@ package q2
 //receberá uma matriz booleana de n linhas e 3 colunas, em que a i-ésima linha representa as opiniões de Pedro, Vanessa e
 //Tônia, respectivamente, sobre o i-ésimo problema. O valor "true" indica que o amigo tem certeza da solução, e "false"
 //indica o contrário.
-//
 //Ajude os amigos a encontrar o número de problemas para os quais eles escreverão uma solução.
 
 func ProblemsSolved(answers [][3]bool) int {
-	// Seu código aqui
+	
+var enumeracao, problema int
+for X := 0; X < len(answers); X++ {
+	enumeracao = 0
+	if answers[X][0] == true {
+	enumeracao++
+	}
+if answers[X][1] == true {
+		enumeracao++
+	}
+if answers[X][2] == true {
+	enumeracao++
+	}
+if enumeracao >= 2 {
+	problema++
+	}
+}
+	return problema
+}
+	
 	return 0
 }
