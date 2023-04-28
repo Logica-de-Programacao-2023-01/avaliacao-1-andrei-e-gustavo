@@ -17,12 +17,13 @@ import "fmt"
 
 
 func DominoPieces(m, n int) (int, error) {
-	// Seu código aqui
-	return 0, nil
+	
 	if m <= 0 || n <= 0 {
-		return 0, fmt.Errorf("Inválido.")
+		return 0, fmt.Errorf("invalido.")
 	} else {
-		numeroPecas := (m * n) / 2
-		return numeroPecas, nil
+		NumeroDePecas := (m * n) / 2
+		return NumeroDePecas, nil
 	}
+}
+return 0, nil
 }
