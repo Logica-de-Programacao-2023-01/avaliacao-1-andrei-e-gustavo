@@ -18,9 +18,10 @@ import "fmt"
 func DivideWatermelon(weight int) (bool, error) {
 if weight <= 0 || weight == 2 {
 if weight <= 0 || weight == 2 {
-	return false, fmt.Errorf("numeracao invalida")
-	}
+return false, fmt.Errorf("numeracao invalida")
+}
 if weight%2 == 0 {
-	return false, nil
+return false, nil
+		}
 	}
 }
